@@ -1,0 +1,45 @@
+<% content_for :title, "Home" %>
+<!-- JUMBOTRON HERO -->
+
+<div class="jumbotron-hero">
+  <div class="container text-center" >
+    <h1 class="display-4 pt-5 font-weight-bold text-dark">THE GOSSIP PROJECT</h1>
+    <%= link_to "Create an account and spread your Gossips !", {controller: "gossips", action: "new"}, class: "btn btn-success btn-lg bottom"%>
+  </div>
+</div>
+
+
+<!-- GOSSIPS DISPLAY -->
+<div class="container-fluid">
+  <div class="row">
+    <% @gossip_array.each do |gossip| %>
+    <div class= "col-4 col-sm-4 col-md-4 col-lg-4 mt-5 text-center" > 
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title"><%= gossip.title %></h5>
+          <p class="card-title">A gossip from : <%= link_to gossip.user.first_name, {controller: "users", action: "show", id: gossip.user.id}%></p>
+          <p class="card-title">This gossip has <%= Comment.where(gossip_id: gossip.id).count %> comments</p>
+          <p class="mb-2 text-info">
+              <span >This gossip has <%= nb_gossip_likes?(gossip.id)%> <%= nb_gossip_likes?(gossip.id) > 1 ? 'Likes' : 'Like'%></span>
+              <!-- GOSSIP LIKE BUTTON-->
+              <% if logged_in? %>
+                <% if is_gossip_liked?(gossip.id) %>
+                <span class="ml-2">
+                  <%= link_to icon('fas', 'thumbs-up'),{controller: "gossip_likes", action: "destroy", id: gossip.id}, method: :delete, style: 'color:blue'%>
+                </span>
+                <% else %>
+                <span class= "ml-2 text-danger">
+                  <%= link_to icon('fas', 'thumbs-up'),{controller: "gossip_likes", method: "new", id: gossip.id}, method: :post, style: 'color:red'%>
+                </span>
+                <% end %>
+             <%else%>
+                  <span class="ml-2 "><%=icon('fas', 'thumbs-up')%></span>
+              <% end %>
+          </p>
+          <%= link_to "See this Gossip", {controller: "gossips", action: "show", id: gossip.id}, class: "btn btn-primary" %>
+        </div>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>

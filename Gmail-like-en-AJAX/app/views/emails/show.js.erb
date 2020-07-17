@@ -1,0 +1,4 @@
+// alert('show ok <%= @email.body %>')
+
+$('#email-content').html("<%= j render 'email', email: @email %>")
+$('#email-<%= @email.id %>').removeClass('font-weight-bold')

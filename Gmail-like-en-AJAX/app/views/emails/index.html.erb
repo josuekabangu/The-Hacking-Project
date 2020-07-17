@@ -1,0 +1,21 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-sm-4">
+            <h1>Emails <a data-method="post" href="<%= emails_path %>" class="btn btn-sm btn-primary">Recevoir email</a></h1>
+
+            <div class="card" style="width: 18rem;">
+            <ul class="list-group list-group-flush">
+                <% @emails.each do |email| %>
+                    <li id="email-<%= email.id %>" class='list-group-item <%= email.read ? '' : 'font-weight-bold'%>'>
+                        <%= link_to email.object, email_path(email.id), remote: true %>
+                    </li>
+                <% end %>
+            </ul>
+            </div>
+        </div>
+        <div class="col-sm-8 mt-5">
+            <div id="email-content">
+            </div>
+        </div>
+    </div>
+</div>

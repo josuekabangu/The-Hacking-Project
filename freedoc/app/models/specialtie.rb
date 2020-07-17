@@ -1,0 +1,2 @@
+class Specialtie < ApplicationRecord
+end

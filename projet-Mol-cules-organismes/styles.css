@@ -1,0 +1,105 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+body {
+	background: black;
+	font-family: "Open Sans",  Impact;
+}
+   
+.area {
+	text-align: center;
+	font-size: 6.5em;
+	color: #fff;
+	letter-spacing: -7px;
+	font-weight: 700;
+	text-transform: uppercase;
+	animation: blur .75s ease-out infinite;
+	text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+}
+@keyframes blur {
+	from {
+		text-shadow:0px 0px 10px #fff,
+		0px 0px 10px #fff, 
+		0px 0px 25px #fff,
+		0px 0px 25px #fff,
+		0px 0px 25px #fff,
+		0px 0px 25px #fff,
+		0px 0px 25px #fff,
+		0px 0px 25px #fff,
+		0px 0px 50px #fff,
+		0px 0px 50px #fff,
+		0px 0px 50px #7B96B8,
+		0px 0px 150px #7B96B8,
+		0px 10px 100px #7B96B8,
+		0px 10px 100px #7B96B8,
+		0px 10px 100px #7B96B8,
+		0px 10px 100px #7B96B8,
+		0px -10px 100px #7B96B8,
+		0px -10px 100px #7B96B8;
+	}
+}   
+	
+.bs-component{
+	background-color: brown;
+	position:absolute;
+	right:0;
+	top:0;
+}
+
+.navbar{
+	border-bottom: 1px solid #282828;
+}
+
+button{
+	margin: 3px;
+}
+
+tr {
+	color: #e0e0e0;
+}
+
+thead{
+	background-color:gray;
+}
+
+.menu{
+	display: flex;
+	justify-content: center;
+}
+
+#cards{
+	margin: 20px;
+	padding: 0 20px 0 20px;
+
+}
+
+.table{
+	border:1px groove #e0e0e0;
+}
+
+section{
+	display: flex;
+}
+
+legend{
+	color: #e0e0e0;
+}
+
+.items{
+	height: 240px;
+	
+}
+
+footer{
+	margin-top: 400px;
+}
+
+footer form{
+	justify-content: center;
+}
+
+.card-footer{
+	text-align: center;
+}
+
+.lead{
+	text-align: center;
+}

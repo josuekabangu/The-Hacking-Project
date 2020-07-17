@@ -1,0 +1,52 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Events</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Start date</th>
+      <th>Duration</th>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Price</th>
+      <th>String</th>
+      <th>Location</th>
+      <th>String</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @events.each do |event| %>
+      <tr>
+        <td><%= event.start_date %></td>
+        <td><%= event.duration %></td>
+        <td><%= event.title %></td>
+        <td><%= event.description %></td>
+        <td><%= event.price %></td>
+        <td><%= event.string %></td>
+        <td><%= event.location %></td>
+        <td><%= event.string %></td>
+        <td><%= link_to 'Show', event %></td>
+        <% if event.user == current_user %>
+        <td><%= link_to 'Edit', edit_event_path(event) %></td>
+        <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Event', new_event_path %>
+    <% if user_signed_in? %>
+        <%= link_to current_user.email, user_path(current_user) %>
+        <%= link_to 'Deconnexion', destroy_user_session_path, method: :delete, class:'btn btn-danger' %>
+
+    <% else %>
+        <%= link_to 'Connexion', new_user_session_path, class:'btn btn-primary'%>
+        <%= link_to 'Inscription', new_user_registration_path %>
+    <% end %>
+

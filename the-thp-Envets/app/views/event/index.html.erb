@@ -1,0 +1,16 @@
+<h1>Bienvenue dans mon site Event Brite</h1>
+
+<div class="container">
+
+    <%= link_to 'Event brite', root_path %>
+    <%= link_to 'Tous les Event', events_path %>
+    <% if user_signed_in? %>
+        <%= link_to current_user.email, user_path(current_user) %>
+        <%= link_to 'Deconnexion', destroy_user_session_path, method: :delete, class:'btn btn-danger' %>
+
+    <% else %>
+        <%= link_to 'Connexion', new_user_session_path, class:'btn btn-primary'%>
+        <%= link_to 'Inscription', new_user_registration_path %>
+    <% end %>
+
+</div>

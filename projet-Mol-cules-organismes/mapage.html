@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-gray-100">
+        <a class="navbar-brand" href="#">Accueil</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Créer un événement <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+          <ul class="navbar-nav mr-rg">
+            <li class="nav-item active">
+              <button type="button" class="btn btn-secondary disabled" style="color:#e0e0e0;">Mon Profil</button>
+            </li>
+            <li class="nav-item active">
+              <button type="button" class="btn btn-outline-secondary" style="color:#e0e0e0;">Se déconnecter</button>
+            </li>
+          </ul> 
+        </div>
+      </nav>
+    <!-- end navbar -->
+
+    <!-- banner_large -->
+    <div class="container d-flex flex-column justify-content-around align-items-center" style="background-image: url('img4.png');background-repeat: no-repeat;background-size: cover;background-position: center center;height:800px;">
+        <div class="area">⚠ Eventbrite Parmain ⚠</div>
+        <h2 style="color:white;">Tous les événements de votre ville à portée de clic</h2>
+        <button type="submit" class="btn btn-primary btn-lg">Créer un événement</button>
+        <div class="d-flex flex-column justify-content-around align-items-center">
+          <h2 style="color:white;">Recherchez-vous un événement?</h2>
+          <form class="my-2 my-lg-0 d-flex flex-column justify-content-between align-items-center">
+            <input class="form-control" type="text" placeholder="Search"><br/>
+            <button class="btn btn-secondary btn-lg" type="submit">Search</button>
+          </form>
+        </div>
+    </div>
+
+    <!-- end banner_large -->
+
+    <!--Cards2-->
+    <p style="text-align: center; color: #e0e0e0;">Prochaines événements</p>
+    <div class="row row-cols-1 row-cols-md-3">
+    <div class="col mb-4">
+        <div class="card">
+        <img src="https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Grosse soirée chez Josette</h5>
+            <p class="card-text">Ramène ton déambulateur !</p>
+        </div>
+        </div>
+    </div>
+    <div class="col mb-4">
+        <div class="card">
+        <img src="https://images.pexels.com/photos/801863/pexels-photo-801863.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Grosse soirée chez yannick </h5>
+            <p class="card-text">Ramène tes potes !</p>
+        </div>
+        </div>
+    </div>
+    <div class="col mb-4">
+        <div class="card">
+        <img src="https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Grosse soirée chez dave</h5>
+            <p class="card-text">Ramène ta bierre et tes potes!</p>
+        </div>
+        </div>
+    </div>
+    <div class="col mb-4">
+        <div class="card">
+        <img src="https://images.pexels.com/photos/1449791/pexels-photo-1449791.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Grosse soirée chez thp</h5>
+            <p class="card-text"> On a des projets à gogo!</p>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- end Cards2-->
+
+
+    <!--Cards-->
+    <div id="cards" class="row d-flex justify-content-around">
+        <div class="card mb-3">
+          <h3 class="card-header text-center">Titre de l'événement</h3>
+          <div class="card-body">
+            <p class="card-text text-center"> Début de la description en une ligne</p>
+          </div>
+          <img style="height: 200px; display: block;" src="friche.png" alt="Card image">
+          <div class="card-body" style="padding-bottom:0px;padding-top:0px;">
+            <ul class="list-group list-group-flush text-center">
+              <li class="list-group-item"><h5>Lieu</h5></li>
+              <li class="list-group-item"><h6 class="text-muted">Date et heure</h6></li>
+              <li class="list-group-item"><a href="#" class="card-link">Voir détails</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card mb-3">
+          <h3 class="card-header text-center">Titre de l'événement</h3>
+          <div class="card-body">
+            <p class="card-text text-center"> Début de la description en une ligne</p>
+          </div>
+          <img style="height: 200px; display: block;" src="friche.png" alt="Card image">
+          <div class="card-body" style="padding-bottom:0px;padding-top:0px;">
+            <ul class="list-group list-group-flush text-center">
+              <li class="list-group-item"><h5>Lieu</h5></li>
+              <li class="list-group-item"><h6 class="text-muted">Date et heure</h6></li>
+              <li class="list-group-item"><a href="#" class="card-link">Voir détails</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card mb-3">
+          <h3 class="card-header text-center">Titre de l'événement</h3>
+          <div class="card-body">
+            <p class="card-text text-center"> Début de la description en une ligne</p>
+          </div>
+          <img style="height: 200px; display: block;" src="friche.png" alt="Card image">
+          <div class="card-body" style="padding-bottom:0px;padding-top:0px;">
+            <ul class="list-group list-group-flush text-center">
+              <li class="list-group-item"><h5>Lieu</h5></li>
+              <li class="list-group-item"><h6 class="text-muted">Date et heure</h6></li>
+              <li class="list-group-item"><a href="#" class="card-link">Voir détails</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <br/>
+      <br/>
+
+      <div class="container">
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">Prénom et Nom du participant 1</h5>
+              <small>date d'inscription</small>
+            </div>
+            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">Prénom et Nom du participant 2</h5>
+              <small class="text-muted">date d'inscription</small>
+            </div>
+            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">Prénom et Nom du participant 3</h5>
+              <small>date d'inscription</small>
+            </div>
+            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+          </a>
+        </div>
+      </div>
+      <hr class="my-4">  
+    <!-- end Cards-->
+
+    <!-- banner_small -->
+    <div class="container d-flex flex-column justify-content-around align-items-center" style="background-image: url('003420i5dd.jpg');background-repeat: no-repeat;background-size: cover;background-position: center center;height:400px;">
+        <h1 style="color:#e0e0e0;" >Contact</h1>
+        <h4 style="color:#e0e0e0;">Nous répondons à toutes vos questions</h4>
+    </div>
+    
+    <!-- end banner_small -->
+
+    <section>
+    <!-- authentification -->
+        <div class="items">
+            <div class="container">
+                <form>
+                <fieldset>
+                    <legend>Formulaire d'inscription</legend>
+        
+                    <div class="form-group">
+                    <label for="exampleInputEmail1" style="color: #e0e0e0;">Prénom</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Prénom">
+                    </div>
+                    <div class="form-group">
+                    <label for="exampleInputPassword1" style="color: #e0e0e0;">Nom</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Nom">
+                    </div>
+        
+                    <div class="form-group">
+                    <label for="exampleInputEmail1" style="color: #e0e0e0;">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+        
+                    </div>
+                    <div class="form-group">
+                    <label for="exampleInputPassword1" style="color: #e0e0e0;">Mot de passe</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Mot de passe">
+                    </div>
+        
+                    <div class="form-group">
+                    <label for="exampleTextarea" style="color: #e0e0e0;">Description</label>
+                    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                    <small id="emailHelp" class="form-text text-muted">Entre 20 et 140 caractères</small>
+                    </div>
+        
+                    <br/>
+                    <button type="submit" class="btn btn-primary">Créer mon compte</button> <button type="submit" class="btn btn-secondary">S'indentifier</button>
+                    <small id="emailHelp" class="form-text text-muted">Vos données personnelles ne seront pas communiquées.</small>
+                </fieldset>
+                </form>
+            </div>
+        </div>
+    <!-- end authentification -->
+
+    <!-- comments -->
+        <div class="items">
+            <legend class="container" style="color:#e0e0e0;margin: 20px;text-align: center;">Derniers commentaires</legend>
+            <div class="container border border-secondary d-flex justify-content-between my-1 bg-light">
+                <img class="p-1" style="height: 55px;" src="index.jpeg" alt="profil picture">
+                <div class="container d-flex flex-column p-1">
+                    <h5>Nom et Prénom</h5>
+                    <p> Contenu du commentaire : Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                </div>
+                <small class="p-3" style="text-align:center;">Date and Hour</small>
+            </div>
+            <div class="container border border-secondary d-flex justify-content-between my-1 bg-light">
+            <img class="p-1" style="height: 55px;" src="index.jpeg" alt="profil picture">
+            <div class="container d-flex flex-column p-1">
+                <h5>Nom et Prénom</h5>
+                <p> Contenu du commentaire : Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+            </div>
+            <small class="p-3" style="text-align:center;">Date and Hour</small>
+            </div>
+            <div class="container border border-secondary d-flex justify-content-between my-1 bg-light">
+            <img class="p-1" style="height: 55px;" src="index.jpeg" alt="profil picture">
+            <div class="container d-flex flex-column p-1">
+                <h5>Nom et Prénom</h5>
+                <p> Contenu du commentaire : Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+            </div>
+            <small class="p-3" style="text-align:center;">Date and Hour</small>
+            </div>
+            <div class="container border border-secondary d-flex justify-content-between my-1 bg-light">
+                <img class="p-1" style="height: 55px;" src="index.jpeg" alt="profil picture">
+                <div class="container d-flex flex-column p-1">
+                  <h5>Nom et Prénom</h5>
+                  <p> Contenu du commentaire : Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                </div>
+                <small class="p-3" style="text-align:center;">Date and Hour</small>
+            </div>
+        </div>
+    </section>
+    <!-- end comments -->
+
+    <!-- footer -->
+    <footer>
+        <h3 class="display-3" style="text-align: center; color: #e0e0e0;">Eventbrite Parmain</h3>
+        <p class="lead" style="color: #e0e0e0;"> Participer à tous les événements de votre ville!</p>
+        <hr class="my-4">
+        <div class="card-footer">
+            <h6 style="color:#e0e0e0;">Rechercher un événement</h6>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+        <hr class="my-4">         
+        <div class="container-fluid text-center">
+        <span class="text-light">
+            Developped by <a href="#" target="_blank">© josue kabangu</a> ✌️
+            for <a href="//www.thehackingproject.org/fr" target="_blank">THP</a>
+        </span>
+        </div>
+    </footer>
+
+</body>
+</html>

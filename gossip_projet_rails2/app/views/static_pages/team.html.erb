@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <% stylesheet_link_tag 'application' %>
+    <title>The Gossip Project</title>
+    <header>
+          <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <a class="navbar-brand" href="#">The Gossip Project</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" <%= link_to "Home", home_path %><span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" <%= link_to "Team", team_path %></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" <%= link_to "Contact", contact_path %></a>
+                  </li>
+              </div>
+            </nav>
+    </header>
+  </head>
+
+  <body>
+    <h1>Bienvenue sur la page de la Team du Gossip Project !</h1>
+    <div class="row justify-content-center">
+
+      <div class="card flex-row flex-wrap">
+        <div class="card-header border-0">
+          <img src="https://i.pinimg.com/originals/c9/6a/c6/c96ac66a8b831957ca9ea2ec2bd08bca.jpg" alt=""
+                width="300">
+        </div>
+        <div class="card-block px-2 mt-4 ml-3">
+          <h4 class="card-title h2">Robert Redford</h4>
+          <p class="card-text"><span class="h5">Age : 70 ans</span></p>
+          <p class="card-text"><span class="h5">Ville : Bali</span></p>
+          <p class="card-text"><span class="h5">Email : robert.redford@mapilule.net</span></p>
+          <p class="card-text"><span class="h5">Description : J'aime le chocolat et les bananes flambées au rhum de Martinique!</span><br /></p>
+          <a href="#" class="btn btn-info">Envoyer un petit mot doux</a>
+          <div class="w-100"></div>
+        </div>
+      </div>
+    </div>
+    <span></span>
+    <div class="row justify-content-center">
+      <div class="card flex-row flex-wrap">
+        <div class="card-header border-0">
+          <img src="https://i.pinimg.com/564x/75/44/89/754489b8ff262e8f7ee88a18682a0afc.jpg" alt=""
+              width="300">
+        </div>
+        <div class="card-block px-2 mt-4 ml-3">
+          <h4 class="card-title h2">Mr Bean</h4>
+          <p class="card-text"><span class="h5">Age : 35 ans</span></p>
+          <p class="card-text"><span class="h5">Ville : Rio de Janeiro</span></p>
+          <p class="card-text"><span class="h5">Email : mr@bean.net</span></p>
+          <p class="card-text"><span class="h5">Description : Je déteste le parfum de la rosée du matin</span><br /></p>
+          <a href="#" class="btn btn-info">Envoyer un petit mot doux</a>
+          <div class="w-100"></div>
+        </div>
+      </div>
+  </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+
+</html>
